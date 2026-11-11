@@ -124,12 +124,13 @@ export default function Home() {
 
             <div>
               <div style={{ position: 'relative', borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: 'var(--shadow-xl)' }}>
-                <img
-                  src="/src/assets/images/battery_breaking_separation_1794290567509.jpg"
-                  alt="Battery Breaking and Hydrodynamic Separation System"
-                  style={{ width: '100%', height: '440px', objectFit: 'cover' }}
-                  referrerPolicy="no-referrer"
-                />
+              <img
+  src="/assets/battery_breaking_separation_1794290567509.jpg"
+  alt="Battery Breaking and Hydrodynamic Separation System"
+  className="about-image"
+  style={{ height: '440px', objectFit: 'cover', width: '100%' }}
+  referrerPolicy="no-referrer"
+/>
                 <div style={{
                   position: 'absolute',
                   bottom: '1.5rem',

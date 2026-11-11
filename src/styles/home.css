@@ -51,13 +51,38 @@
   z-index: 2;
 }
 
+/* ============================================================
+   FIX FOR MOBILE HERO IMAGE & ABOUT IMAGE
+   ============================================================ */
+
+/* 1. Make the hero image brighter overall */
+.hero-bg-img {
+  opacity: 0.6; /* Increased from 0.32 so image is visible */
+  object-position: center center;
+}
+
+/* 2. Fix the mobile view */
 @media (max-width: 992px) {
+  /* Make the overlay lighter so the image shows through */
   .hero-gradient-overlay {
     background: linear-gradient(
       180deg,
-      rgba(5, 26, 46, 0.95) 0%,
-      rgba(7, 59, 104, 0.92) 100%
-    );
+      rgba(5, 26, 46, 0.85) 0%,
+      rgba(7, 59, 104, 0.65) 100%
+    ) !important; 
+  }
+
+  /* Ensure the hero section has enough height for the image */
+  .hero-section {
+    min-height: 75vh; 
+  }
+
+  /* 3. Fix for the About section image (making it responsive) */
+  .about-image {
+    width: 100%;
+    height: 280px; /* Smaller height for mobile */
+    object-fit: cover;
+    display: block;
   }
 }
 
