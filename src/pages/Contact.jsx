@@ -17,7 +17,7 @@ export default function Contact() {
       <section className="contact-hero" aria-labelledby="contact-hero-heading">
         <div className="contact-hero-bg" aria-hidden="true">
           <img
-            src="/public/assets/contact1.jfif"
+            src="/assets/contact1.jfif"
             alt=""
             className="contact-hero-bg-img"
             loading="eager"

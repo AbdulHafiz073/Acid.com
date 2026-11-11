@@ -100,7 +100,7 @@ export default function Navbar() {
        <Link to="/" className="brand-link" aria-label="EcoLead Industries Home">
 
   <img
-    src="/public/assets/logo3.png"
+    src="/assets/logo3.png"
     alt="EcoLead Battery Logo"
     className="brand-logo"
   />
