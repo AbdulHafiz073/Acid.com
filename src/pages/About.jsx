@@ -65,7 +65,7 @@ export default function About() {
 
   {/* Background Image */}
   <img
-    src="/public/assets/about-us-100kb.jpeg"
+    src="/assets/about-us-100kb.jpeg"
     alt="Lead Acid Battery Recycling Facility"
     className="about-hero-background"
   />

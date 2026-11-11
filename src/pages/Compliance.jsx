@@ -79,7 +79,7 @@ export default function Compliance() {
         {/* Background layer: image + dark overlay */}
         <div className="compliance-hero-bg" aria-hidden="true">
           <img
-            src="/public/assets/home11-100kb.jpeg"
+            src="/assets/home11-100kb.jpeg"
             alt=""
             className="compliance-hero-bg-img"
             loading="eager"

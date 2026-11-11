@@ -23,7 +23,7 @@ export default function Products() {
       <section className="products-hero" aria-labelledby="products-hero-heading">
         <div className="products-hero-bg" aria-hidden="true">
           <img
-            src="/public/assets/product.jfif"
+            src="/assets/product.jfif"
             alt=""
             className="products-hero-bg-img"
             loading="eager"

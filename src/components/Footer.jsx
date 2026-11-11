@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="footer-brand-title">
               
   <img
-    src="/public/assets/logo3.png"
+    src="/assets/logo3.png"
     alt="EcoLead Battery Logo"
     className="brand-logo"
   />

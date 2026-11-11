@@ -26,7 +26,7 @@ export default function Infrastructure() {
         {/* Background layer: image + dark overlay */}
         <div className="infra-hero-bg" aria-hidden="true">
           <img
-            src="/public/assets/machine.jfif"
+            src="/assets/machine.jfif"
             alt=""
             className="infra-hero-bg-img"
             loading="eager"

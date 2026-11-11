@@ -13,7 +13,7 @@ export default function Home() {
       <section className="hero-section" aria-label="Hero Introduction">
         <div className="hero-background-media">
           <img
-            src="/public/assets/home11-100kb.jpeg"
+            src="/assets/home11-100kb.jpeg"
             alt="EcoLead Recycling Manufacturing Facility"
             className="hero-bg-img"
             referrerPolicy="no-referrer"

@@ -15,7 +15,7 @@ export default function RecyclingProcess() {
 
   {/* Background Image */}
   <img
-    src="/public/assets/Recycling-Process 2-100kb.jpeg"
+    src="/assets/Recycling-Process 2-100kb.jpeg"
     alt="Lead Acid Battery Recycling Factory"
     className="process-hero-background"
   />
