@@ -1,0 +1,508 @@
+/**
+ * Industrial Lead-Acid Battery Recycling Factory Data Repository
+ * Full 11-stage process, product specifications, machinery, environmental systems, and gallery
+ */
+
+export const factoryInfo = {
+  name: "EcoLead / Jalon Metal Industries",
+  tagline: "Advanced Lead-Acid & Battery Recycling Solutions",
+  subtitle: "Turning Used Batteries into Valuable Resources for a Sustainable Tomorrow.",
+  foundedYear: 2018,
+  yearsOfExperience: "8+",
+  annualCapacity: "12,000 Metric Tons",
+  recoveryRate: ">98%",
+  cleanEnergyRatio: "100% Closed-Loop Water (ZLD)",
+  address: "Joya, Fairdabad Urf Nasirpur, Amroha / Jyotiba Phule Nagar, Uttar Pradesh 244222, India",
+  phone: "+91 9810007913 / +91 98765 43210",
+  whatsapp: "+91 9810007913",
+  email: "info@jalonmetal.in",
+  salesEmail: "contact@ecoleadindustries.com",
+  hours: "Plant Operations: 24/7 Continuous Metallurgy | Admin: Mon - Sat, 8:00 AM - 7:00 PM",
+};
+
+export const processStages = [
+  {
+    id: 1,
+    step: "STEP 01",
+    title: "Used Battery Receipt & Weighing",
+    phase: "Inbound & Receipt",
+    shortDesc: "Receiving scrap lead-acid batteries, verifying supplier documentation, and digital weighbridge recording.",
+    fullDesc: "Used Lead-Acid Batteries (ULAB) arrive at our secured, acid-resistant unloading docks. Each consignment undergoes rigorous inbound verification, supplier manifest validation, and automated gross tare weighing on calibrated digital weighbridges.",
+    bulletPoints: [
+      "Receiving used lead-acid batteries across automotive, industrial, and telecom classes",
+      "Supplier verification and statutory inward register entries",
+      "Calibrated electronic gross-tare weighing and lot identification tag assignment",
+      "Acid-proof flooring containment with secondary spill sumps"
+    ],
+    safetyEnv: "Acid-resistant rubber PPE, eye-wash safety showers, containment berms with acid-neutralizing dry lime buffers.",
+    recoveredMaterial: "Batched Raw ULAB Consignments",
+    machineryUsed: "Automated 60-Ton Electronic Weighbridge, Acid-Resistant Heavy Forklifts, Barcode Lot Tagging System",
+    image: "/src/assets/images/battery_receiving_sorting_1794290566654.jpg",
+  },
+  {
+    id: 2,
+    step: "STEP 02",
+    title: "Inspection & Sorting",
+    phase: "Inbound & Receipt",
+    shortDesc: "Visual evaluation, crack and leakage detection, sorting by casing chemistry and size.",
+    fullDesc: "Incoming batteries are methodically inspected for structural integrity. Technicians classify batteries by type (automotive starter, inverter, tubular, sealed VRLA/AGM) and isolate physically damaged units to dedicated spill-containment trays.",
+    bulletPoints: [
+      "Rigorous visual inspection of all outer shells, posts, and vent caps",
+      "Leakage, crack, and bulging deformation checking",
+      "Sorting into categorized streams: Polypropylene (PP) vs ABS/Hard Rubber cases",
+      "Immediate isolation of ruptured units into acid-proof emergency bins"
+    ],
+    safetyEnv: "Airborne acid vapor extraction hoods, personal protective respirators, neutralizing washdown nozzles.",
+    recoveredMaterial: "Graded & Sorted Battery Batches",
+    machineryUsed: "Roller Conveyor Inspection Table, Automated Optical Sorting Assist, Acid Sump Drains",
+    image: "/src/assets/images/factory_hero_facility_1794290544562.jpg",
+  },
+  {
+    id: 3,
+    step: "STEP 03",
+    title: "Discharging (De-energizing)",
+    phase: "Preparation & Safety",
+    shortDesc: "Safe neutralization of residual electrical charge to prevent sparks or thermal hazards during breaking.",
+    fullDesc: "Before mechanical processing, all batteries pass through our controlled de-energizing line. Residual electrical energy is discharged through safe resistive load banks, preventing arc flashes, short circuits, and hydrogen ignition hazards during shearing.",
+    bulletPoints: [
+      "Safe removal of remaining residual electrical charges across all cell groups",
+      "Electrical potential monitoring to ensure less than 0.5V per cell prior to crushing",
+      "Hydrogen gas dissipation using explosion-proof ATEX exhaust ventilation",
+      "Thermal infrared scanning to eliminate thermal runaway risks"
+    ],
+    safetyEnv: "Intrinsically safe spark-proof tools, continuous hydrogen gas (H2) detection probes, automatic nitrogen blanket interlocks.",
+    recoveredMaterial: "De-energized Inactive Battery Cells",
+    machineryUsed: "Automated Resistor Load Banks, ATEX Air Handling Unit, FLIR Thermal Cameras",
+    image: "/src/assets/images/battery_receiving_sorting_1794290566654.jpg",
+  },
+  {
+    id: 4,
+    step: "STEP 04",
+    title: "Manual Dismantling & Separation",
+    phase: "Mechanical Separation",
+    shortDesc: "Separation of casing, removal of lead poles and connectors, physical fraction sorting.",
+    fullDesc: "Large industrial cells and specialized traction batteries undergo precision mechanical decapitation and manual disassembly. Cable clamps, copper-lead composite terminals, covers, and internal cell packs are cleanly segregated.",
+    bulletPoints: [
+      "Precision separation of outer battery casing and top lids",
+      "Removal and segregation of heavy lead poles, copper lugs, and busbars",
+      "Direct segregation of plastic polymers from internal lead grid packs",
+      "Sealed containment chutes directing fractions to specialized downstream lines"
+    ],
+    safetyEnv: "Lead-dust extraction downdraft benches, cut-resistant Kevlar nitrile gloves, local air filtering hoods.",
+    recoveredMaterial: "Terminal Connectors, Lead Grids, Clean Polymer Casings",
+    machineryUsed: "Semi-Automated Top-Cutter, Pneumatic Pole Pullers, Downdraft Extraction Workstations",
+    image: "/src/assets/images/battery_breaking_separation_1794290567509.jpg",
+  },
+  {
+    id: 5,
+    step: "STEP 05",
+    title: "Acid Recovery & Treatment",
+    phase: "Chemical Processing",
+    shortDesc: "Complete collection of spent electrolyte, filtration, chemical neutralization and sodium sulfate recovery.",
+    fullDesc: "Spent battery acid (dilute sulfuric acid H2SO4) is drained via suction hoods into acid-resistant high-density polyethylene tanks. It undergoes multi-stage filtration to remove lead fines, followed by chemical neutralization or purification for industrial reuse.",
+    bulletPoints: [
+      "100% enclosed drainage and vacuum collection of liquid electrolyte",
+      "Micro-filtration removing micro-particulate lead paste suspended in acid",
+      "Chemical neutralization with sodium hydroxide/lime producing non-toxic gypsum or pure industrial sodium sulfate",
+      "Filtered water recirculation into factory closed-loop process lines"
+    ],
+    safetyEnv: "Double-walled FRP piping, acid-fume wet scrubbers, automated pH neutralizer controllers.",
+    recoveredMaterial: "Industrial Sodium Sulfate, Purified Neutralized Water",
+    machineryUsed: "Vacuum Acid Suction Header, Acid Filter Press, Neutralization Reaction Tanks, ETP Pumps",
+    image: "/src/assets/images/pollution_control_etp_1794290545665.jpg",
+  },
+  {
+    id: 6,
+    step: "STEP 06",
+    title: "Lead Recycling (Smelting / Furnace)",
+    phase: "Thermal Metallurgy",
+    shortDesc: "Controlled high-temperature rotary smelting of lead paste and grids, slag separation, and pure molten lead recovery.",
+    fullDesc: "Lead fractions—including desulfurized paste, metallic grids, and poles—are charged into modern oxy-fuel rotary smelting furnaces. Under strict temperature control (950°C to 1100°C) with flux additions, lead is reduced to molten metallic form while dross and slag are skimmed.",
+    bulletPoints: [
+      "Thermal processing of recovered lead paste, oxide powder, and grid plates",
+      "Oxy-fuel controlled combustion minimizing flue gas volume by 70%",
+      "Submerged metallurgical smelting yielding high-recovery crude lead bullion",
+      "Automated slag and dross phase separation with recycling of high-lead dross"
+    ],
+    safetyEnv: "Post-combustion chamber (1100°C), rapid quench gas coolers, pulse-jet baghouse filters, continuous lead-in-air probes.",
+    recoveredMaterial: "Crude Lead Bullion (97-98% Pb), Vitrified Insoluble Slag",
+    machineryUsed: "Rotary Smelting Furnaces, Oxy-Gas Burners, Automatic Tapping Ladles, Slag Granulator",
+    image: "/src/assets/images/battery_smelting_furnace_1794290545752.jpg",
+  },
+  {
+    id: 7,
+    step: "STEP 07",
+    title: "Plastic Recycling",
+    phase: "Polymer Processing",
+    shortDesc: "Polypropylene casing shredding, multi-stage hydrodynamic wash, drying, and high-impact pelletizing.",
+    fullDesc: "Battery casings made of polypropylene (PP) are shredded into uniform flakes. Flakes travel through sink-float hydrodynamic separation tanks where heavier lead and separators sink, while clean PP floats. The plastic is washed, dried, extruded, and pelletized into uniform granules.",
+    bulletPoints: [
+      "High-speed shredding into 8-12mm polypropylene casing flakes",
+      "Hydrodynamic sink-float separation with density-adjusted water baths",
+      "Hot alkaline wash removing oil, acid residues, and chemical stains",
+      "Centrifugal friction drying followed by melt extrusion and strand pelletizing"
+    ],
+    safetyEnv: "Closed-loop polymer wash water recycling, VOC filtration on extruder vents, microplastic capture screens.",
+    recoveredMaterial: "High-Impact Polypropylene (PP) Granules (Blue & Black)",
+    machineryUsed: "Heavy-Duty Rotary Granulator, Sink-Float Separation Tanks, Centrifugal Dryer, Twin-Screw Polymer Extruder",
+    image: "/src/assets/images/recycled_plastic_granules_1794290545307.jpg",
+  },
+  {
+    id: 8,
+    step: "STEP 08",
+    title: "Other Material Processing",
+    phase: "Byproduct Segregation",
+    shortDesc: "Segregation and authorized routing of separators, ebonite/rubber casings, and copper terminal inserts.",
+    fullDesc: "Non-lead and non-polypropylene materials, including PVC/polyethylene battery separators, synthetic rubber ebonite liners, and copper terminal sleeves, are segregated through magnetic and eddy-current sorters and routed to certified authorized recyclers.",
+    bulletPoints: [
+      "Separation of microporous polyethylene and glass mat (AGM) separators",
+      "Eddy-current separation of copper terminals and brass connection pins",
+      "Segregation of synthetic rubber and ebonite fractions",
+      "Transfer to licensed secondary materials processors ensuring zero landfilling"
+    ],
+    safetyEnv: "Dedicated hazardous materials storage pods, barcode consignment tracking, chain-of-custody transfer logs.",
+    recoveredMaterial: "Clean Copper Scrap, Inert Separator Fluff",
+    machineryUsed: "Eddy Current Non-Ferrous Separator, Overband Magnetic Crossbelt, Vibrating Screening Decks",
+    image: "/src/assets/images/battery_breaking_separation_1794290567509.jpg",
+  },
+  {
+    id: 9,
+    step: "STEP 09",
+    title: "Final Product Handling",
+    phase: "Refining & Casting",
+    shortDesc: "Lead refining in indirect-fired kettles, optical emission testing, ingot casting, and polymer packaging.",
+    fullDesc: "Crude lead is transferred into indirect-fired refining kettles. Impurities like antimony, arsenic, copper, and tin are selectively removed or alloyed to customer exact specifications. Purified lead (99.97%+) is cast on automated continuous ingot casting machines.",
+    bulletPoints: [
+      "Pyrometallurgical refining with sulfur, sawdust, and sodium nitrate fluxes",
+      "Precision alloying producing custom Lead-Antimony and Lead-Calcium alloys",
+      "Automated continuous casting conveyor with robotic ingot stacking and strapping",
+      "Polypropylene granule automatic weighing and 25kg / 1-ton jumbo bag packaging"
+    ],
+    safetyEnv: "Indirect fume exhaust hoods above kettles, robotic casting arms eliminating molten metal worker contact.",
+    recoveredMaterial: "99.97% Pure Refined Lead Ingots, Master Alloy Ingots, Bagged Polymer Granules",
+    machineryUsed: "50-Ton Refining Kettles, Optical Emission Spectrometer (OES), Automated Ingot Casting Machine, Robotic Palletizer",
+    image: "/src/assets/images/recovered_lead_ingots_1794290545484.jpg",
+  },
+  {
+    id: 10,
+    step: "STEP 10",
+    title: "Waste Treatment & Pollution Control",
+    phase: "Environmental Protection",
+    shortDesc: "Advanced multi-stage pulse-jet baghouses, wet venturi scrubbers, ETP zero-liquid-discharge systems.",
+    fullDesc: "Our environmental mitigation system operates continuously. Flue gases pass through spark arrestors, cyclone dust separators, pulse-jet PTFE membrane bag filters, and counter-current packed bed caustic scrubbers. Liquid effluents are treated in an on-site Zero Liquid Discharge (ZLD) plant.",
+    bulletPoints: [
+      "Multi-stage Air Pollution Control System (APCS) achieving lead emissions < 0.5 mg/Nm³",
+      "Pulse-jet baghouses equipped with heat-resistant Gore-Tex PTFE membrane filters",
+      "High-efficiency wet venturi and packed tower scrubbers neutralizing SO2 and acid fumes",
+      "Effluent Treatment Plant (ETP) with clarification, sand filtration, and Reverse Osmosis (RO)"
+    ],
+    safetyEnv: "Continuous Emission Monitoring Systems (CEMS) transmitting real-time telemetry to regulatory dashboards.",
+    recoveredMaterial: "Treated Recycled Water, Stabilized Non-Hazardous Gypsum",
+    machineryUsed: "Pulse-Jet Baghouse Filters, Dual-Alkali Wet Scrubbers, Multi-Stage RO Unit, Filter Press",
+    image: "/src/assets/images/pollution_control_etp_1794290545665.jpg",
+  },
+  {
+    id: 11,
+    step: "STEP 11",
+    title: "Dispatch of Recycled Products",
+    phase: "Dispatch & Logistics",
+    shortDesc: "Secure storage of finished goods, chemical certificate of analysis generation, and dispatch to manufacturers.",
+    fullDesc: "Refined lead ingots, customized alloys, and polymer granules are stored in climate-controlled warehouses. Every pallet is tagged with its melt heat number, chemical composition certificate, and dispatched to global battery manufacturers.",
+    bulletPoints: [
+      "Batch certification with full Optical Emission Spectrometer (OES) purity reports",
+      "Strapped, shrink-wrapped 1-ton lead ingot bundles loaded with anti-slip dunnage",
+      "Sealed moisture-barrier packaging for recycled polypropylene granules",
+      "GPS-tracked logistics dispatch ensuring complete traceable chain-of-custody"
+    ],
+    safetyEnv: "Covered loading docks preventing weather exposure, automated forklift weigh sensors, zero product spillage.",
+    recoveredMaterial: "Commercial Ready Ingot Bundles, Certified Polymer Shipments",
+    machineryUsed: "Heavy Ingot Strapping Machine, Stretch Wrapping Turntable, Automated Logistics Dispatch ERP",
+    image: "/src/assets/images/recovered_lead_ingots_1794290545484.jpg",
+  },
+];
+
+export const products = [
+  {
+    id: "lead-ingots",
+    title: "Recovered Pure Lead Ingots",
+    purity: "99.97% Min. Pure Lead (Pb)",
+    category: "Primary Recovered Metal",
+    image: "/src/assets/images/recovered_lead_ingots_1794290545484.jpg",
+    specs: [
+      { label: "Purity Grade", value: "99.97% - 99.985% Pb" },
+      { label: "Standard Weight", value: "25 kg per ingot (approx.)" },
+      { label: "Bundle Size", value: "40 ingots / 1 Metric Ton" },
+      { label: "Impurities", value: "Cu < 0.001%, Bi < 0.015%, Ag < 0.002%" },
+    ],
+    description: "Our high-purity recycled lead ingots are refined through multi-stage pyrometallurgical kettles and verified via Optical Emission Spectrometry. Perfect for tier-1 automotive battery plates and chemical radiation shielding.",
+    applications: [
+      "Automotive SLI battery positive & negative plates",
+      "Industrial standby and motive power battery grids",
+      "Radiation shielding and acoustic dampening sheets",
+      "Chemical industry lead pipe and vessel linings"
+    ],
+  },
+  {
+    id: "lead-alloys",
+    title: "Lead Alloys (Antimonial & Calcium)",
+    purity: "Custom Alloy Formulations",
+    category: "Specialty Master Alloys",
+    image: "/src/assets/images/recovered_lead_ingots_1794290545484.jpg",
+    specs: [
+      { label: "Antimonial Lead", value: "Sb 1.5% to 6.0% (customizable)" },
+      { label: "Calcium Lead", value: "Ca 0.06% - 0.12%, Sn 0.3% - 1.2%" },
+      { label: "Packaging", value: "1 MT bundled stacks with steel straps" },
+      { label: "Testing", value: "Spark Optical Emission Spectrometry" },
+    ],
+    description: "Engineered specifically for deep-cycle and maintenance-free battery manufacturers. Formulated with tight metallurgical tolerances for grain-refiners like Selenium, Tin, and Arsenic.",
+    applications: [
+      "Maintenance-free VRLA battery positive grids",
+      "Deep cycle solar energy storage batteries",
+      "Heavy-duty commercial vehicle batteries",
+      "Extruded lead wire, bullet alloy, and cable sheathing"
+    ],
+  },
+  {
+    id: "plastic-granules",
+    title: "Recycled Polypropylene (PP) Granules",
+    purity: "High-Impact Copolymer Grade",
+    category: "Recycled Polymer Resins",
+    image: "/src/assets/images/recycled_plastic_granules_1794290545307.jpg",
+    specs: [
+      { label: "Polymer Base", value: "Polypropylene (PP) Impact Copolymer" },
+      { label: "Melt Flow Index", value: "6.0 - 10.0 g/10min (230°C/2.16kg)" },
+      { label: "Colors Available", value: "Cobalt Blue, Jet Black, Industrial Grey" },
+      { label: "Packaging", value: "25 kg bags or 1000 kg Jumbo Big Bags" },
+    ],
+    description: "Derived from washed, shredded, and melt-extruded automotive battery casings. Features superior impact resistance, low acid retention, and consistent rheological flow for thin-wall battery casing moulding.",
+    applications: [
+      "New automotive and industrial battery casings and covers",
+      "Automotive wheel arch liners, bumper brackets, and mudguards",
+      "Industrial crates, heavy-duty pallets, and storage containers",
+      "Extruded drainage pipes and corrugated conduits"
+    ],
+  },
+  {
+    id: "treated-acid",
+    title: "Treated Acid & Sodium Sulfate",
+    purity: "Industrial Chemical Grade",
+    category: "Recovered Chemical Byproduct",
+    image: "/src/assets/images/pollution_control_etp_1794290545665.jpg",
+    specs: [
+      { label: "Product Type", value: "Refined Sodium Sulfate (Na2SO4) / Neutralized Acid" },
+      { label: "Purity Grade", value: "98.5% Anhydrous Sodium Sulfate" },
+      { label: "Form", value: "Free-flowing white crystalline powder" },
+      { label: "Moisture Content", value: "< 0.2% max" },
+    ],
+    description: "Through proprietary neutralization and crystallization units within our chemical effluent plant, recovered electrolyte is transformed into marketable anhydrous sodium sulfate powder, preventing any hazardous liquid discharge.",
+    applications: [
+      "Detergent and cleaning formulation manufacturing",
+      "Kraft pulp and paper processing chemicals",
+      "Textile dye fixation and leveling agent",
+      "Glass manufacturing fluxes"
+    ],
+  },
+  {
+    id: "metal-scrap",
+    title: "Secondary Copper & Metal Scrap",
+    purity: "Sorted Non-Ferrous Fractions",
+    category: "Recovered Byproduct Fractions",
+    image: "/src/assets/images/battery_breaking_separation_1794290567509.jpg",
+    specs: [
+      { label: "Fraction Types", value: "Copper terminals, brass inserts, steel connectors" },
+      { label: "Separation Method", value: "Eddy-current and optical sensor sorting" },
+      { label: "Delivery Form", value: "Cleaned briquettes or loose sorted scrap" },
+      { label: "Destination", value: "Certified authorized secondary smelters" },
+    ],
+    description: "Precision eddy-current and magnetic sorting segregates valuable copper lugs, brass terminals, and stainless steel fasteners from battery assemblies, achieving zero landfill waste.",
+    applications: [
+      "Copper smelting and alloy ingot production",
+      "Electrical component manufacturing",
+      "Foundry charge material"
+    ],
+  },
+];
+
+export const environmentalPillars = [
+  {
+    id: "air-control",
+    title: "Air Pollution Control Systems (APCS)",
+    summary: "Multi-stage capture with pulse-jet baghouses and wet venturi scrubbers achieving lead emissions <0.5 mg/Nm³.",
+    details: "All furnace tap-holes, kettle hoods, and breaking units are ducted to high-capacity induced draft fans. Flue gases pass through spark arrestors, cyclone separators, Gore-Tex PTFE membrane bag filters, and counter-current caustic scrubber towers to eliminate SO2 and particulate lead dust.",
+    kpi: "< 0.5 mg/Nm³ Stack Emission",
+  },
+  {
+    id: "etp-zld",
+    title: "Effluent Treatment Plant & Zero Liquid Discharge",
+    summary: "100% water recovery using neutralization, dual clarifiers, multi-media filters, and Reverse Osmosis.",
+    details: "All process wastewater and storm runoffs from battery storage bays are directed to the on-site ETP. Heavy metals are precipitated as insoluble hydroxides, followed by lamella clarification, sand filtration, and RO recycling back into factory cooling towers.",
+    kpi: "100% Closed Loop Recycled Water",
+  },
+  {
+    id: "hazardous-waste",
+    title: "Hazardous Waste Management & Slag Handling",
+    summary: "Engineered containment, slag stabilization, and authorized hazardous disposal manifest compliance.",
+    details: "Smelting furnace slag undergoes chemical stabilization. Non-leachable vitrified slag is tested via Toxicity Characteristic Leaching Procedure (TCLP) before transfer to authorized landfill cells, with strict Form 10 hazardous waste tracking.",
+    kpi: "Zero Unregulated Discharge",
+  },
+  {
+    id: "noise-vibration",
+    title: "Noise & Vibration Abatement",
+    summary: "Heavy-duty acoustic enclosures and silencers keeping perimeter noise levels below 65 dB(A).",
+    details: "Rotary furnaces, hammer mills, and high-pressure blowers are equipped with acoustic silencers, tuned vibration isolators, and heavy soundproof sandwich panel enclosures.",
+    kpi: "< 65 dB(A) Factory Boundary",
+  },
+  {
+    id: "monitoring",
+    title: "Continuous Environmental Monitoring (CEMS)",
+    summary: "Real-time telemetry measuring PM10, PM2.5, SO2, NOx, and ambient lead concentrations 24/7.",
+    details: "Online stack emission analyzers and 4 ambient air monitoring stations around the factory perimeter provide real-time telemetry to facility engineers and regulatory authorities.",
+    kpi: "24/7 Continuous Sensor Telemetry",
+  },
+];
+
+export const machineryList = [
+  {
+    id: "m1",
+    name: "Automated Battery Breaking & Hydrodynamic Separation Plant",
+    capacity: "15 Tons / Hour",
+    purpose: "Crushes battery cases and separates lead paste, metallic grids, and plastic via sink-float water density differences.",
+    image: "/src/assets/images/battery_breaking_separation_1794290567509.jpg",
+    specs: "316L Stainless Steel wet parts, automated slow-speed double-shaft rotary shear, density float tanks.",
+  },
+  {
+    id: "m2",
+    name: "Controlled Rotary Smelting Furnaces with Oxy-Fuel Combustion",
+    capacity: "120 Metric Tons / Day",
+    purpose: "Reduces lead paste and metallic grids into crude lead bullion with minimized flue volume and high thermal efficiency.",
+    image: "/src/assets/images/battery_smelting_furnace_1794290545752.jpg",
+    specs: "PLC automated tilt angle, oxygen-enriched natural gas burners, refractory chrome-magnesite lining.",
+  },
+  {
+    id: "m3",
+    name: "50-Ton Refining Kettles & Automated Continuous Ingot Casting",
+    capacity: "60 Tons / Batch",
+    purpose: "Pyrometallurgical refining of lead bullion, chemical alloying, and continuous robotic ingot casting.",
+    image: "/src/assets/images/recovered_lead_ingots_1794290545484.jpg",
+    specs: "Indirect gas-fired burner, mechanical dross skimmer, air-cooled mould conveyor, robotic stacking arm.",
+  },
+  {
+    id: "m4",
+    name: "Polypropylene Washing, Drying & Twin-Screw Granulation Line",
+    capacity: "2.5 Tons / Hour",
+    purpose: "Washes shredded battery casing flakes, removes trace acid, and extrudes uniform polymer granules.",
+    image: "/src/assets/images/recycled_plastic_granules_1794290545307.jpg",
+    specs: "Friction washer, centrifugal spin dryer, vacuum degassed twin-screw extruder, underwater pelletizer.",
+  },
+  {
+    id: "m5",
+    name: "Multi-Stage Pulse-Jet Baghouse & Wet Venturi Scrubber Tower",
+    capacity: "75,000 m³/hr Airflow",
+    purpose: "Treats furnace off-gases, capturing sub-micron lead particulate matter and neutralizing acid fumes.",
+    image: "/src/assets/images/pollution_control_etp_1794290545665.jpg",
+    specs: "Gore-Tex PTFE filter bags, automated differential pressure pulsing, twin caustic scrubbing stages.",
+  },
+  {
+    id: "m6",
+    name: "Optical Emission Spectrometer & Metallurgy Testing Laboratory",
+    capacity: "100+ Samples / Day",
+    purpose: "Chemical assay of molten lead samples within 60 seconds to guarantee 99.97% purity and exact alloy formulations.",
+    image: "/src/assets/images/lab_quality_testing_1794290567078.jpg",
+    specs: "High-precision CCD optical spectrometer, digital Melt Flow Indexer, automatic sample disc lathe.",
+  },
+];
+
+export const galleryItems = [
+  {
+    id: 1,
+    title: "Main Recycling Production Floor",
+    category: "facility",
+    image: "/src/assets/images/factory_hero_facility_1794290544562.jpg",
+    caption: "Spacious, high-ceiling industrial factory floor featuring automated battery breaker lines and epoxy floor coating.",
+  },
+  {
+    id: 2,
+    title: "Refined 99.97% Pure Lead Ingot Stacks",
+    category: "products",
+    image: "/src/assets/images/recovered_lead_ingots_1794290545484.jpg",
+    caption: "Standard 25kg refined lead ingots neatly strapped and tagged for battery OEM dispatch.",
+  },
+  {
+    id: 3,
+    title: "Recycled Polypropylene Polymer Granules",
+    category: "products",
+    image: "/src/assets/images/recycled_plastic_granules_1794290545307.jpg",
+    caption: "Uniform blue and black impact-grade PP granules manufactured from processed battery casings.",
+  },
+  {
+    id: 4,
+    title: "Oxy-Fuel Rotary Smelting Furnace & Control Cabin",
+    category: "machinery",
+    image: "/src/assets/images/battery_smelting_furnace_1794290545752.jpg",
+    caption: "Heavy-duty rotary smelting furnace in operation with centralized SCADA control cabin.",
+  },
+  {
+    id: 5,
+    title: "Multi-Stage Scrubber & ETP Neutralization Towers",
+    category: "environment",
+    image: "/src/assets/images/pollution_control_etp_1794290545665.jpg",
+    caption: "Stainless steel scrubber columns and clarifier tanks ensuring zero liquid and air pollution.",
+  },
+  {
+    id: 6,
+    title: "Used Battery Inbound Receiving & Electronic Weighing",
+    category: "facility",
+    image: "/src/assets/images/battery_receiving_sorting_1794290566654.jpg",
+    caption: "Safe acid-resistant logistics dock with digital weighing platforms and barcode inventory registration.",
+  },
+  {
+    id: 7,
+    title: "Hydrodynamic Sink-Float Polymer Separation System",
+    category: "machinery",
+    image: "/src/assets/images/battery_breaking_separation_1794290567509.jpg",
+    caption: "Water density separation system separating floating plastic casing chips from sunken lead paste.",
+  },
+  {
+    id: 8,
+    title: "Metallurgical Quality Testing & Spectrometry Laboratory",
+    category: "facility",
+    image: "/src/assets/images/lab_quality_testing_1794290567078.jpg",
+    caption: "Analytical lab technician testing lead alloy compositions using Optical Emission Spectrometry (OES).",
+  },
+];
+
+export const initialEnquiries = [
+  {
+    id: "enq-101",
+    fullName: "Marcus Vance",
+    company: "Apex Battery Technologies Ltd.",
+    email: "m.vance@apexbatteries.co",
+    phone: "+1 (312) 555-0149",
+    type: "Recycled Lead Purchase",
+    message: "Seeking contract quote for monthly supply of 200 Metric Tons of 99.97% pure refined lead ingots for automotive SLI production.",
+    date: "2026-11-08",
+    status: "New",
+  },
+  {
+    id: "enq-102",
+    fullName: "Elena Rostova",
+    company: "PolyMold Industrial Systems",
+    email: "elena@polymold.org",
+    phone: "+1 (415) 555-8932",
+    type: "Plastic Granules Purchase",
+    message: "Interested in sample batches of recycled black polypropylene copolymer granules (MFI 7.5-8.5) for battery box injection moulding.",
+    date: "2026-11-06",
+    status: "In Review",
+  },
+  {
+    id: "enq-103",
+    fullName: "David Chen",
+    company: "National Grid Logistics Services",
+    email: "dchen@gridlogistics.com",
+    phone: "+1 (617) 555-3211",
+    type: "Used Battery Supply",
+    message: "We decommission industrial telecom UPS banks quarterly (approx 45 tons per quarter) and require safe, certified recycling partners.",
+    date: "2026-11-03",
+    status: "Replied",
+  },
+];
